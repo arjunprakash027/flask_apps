@@ -14,7 +14,11 @@
   <main class="flex flex-col md:flex-row mx-auto flex gap-4 items-stretch justify-between max-w-full lg:max-w-[115rem] mt-12">
 
     <section class="flex flex-col gap-4 items-stretch w-full">
-        {{yes}}
+        {{filename}} succussfully downloaded
+        <br>
+        <div>
+          <a class="btn btn-success" href={{url_for('download_file',name=rnad)}}>Download</a>
+        </div>
     </section>
         
 
